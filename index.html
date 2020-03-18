@@ -51,8 +51,8 @@
           <input id="email" type="email" placeholder="me@me.com" name="name" required>
         </div>
         <div class="unit padleft push xs-1 m-1-2 l-1-2">
-          <label for="Phone-number">Phone number (optional)</label>
-          <input id="Phone-number" type="number" name="name" required>
+          <label for="Phone-number">Phone number <span>(optional)</span>)</label>
+          <input id="Phone-number" type="number" name="name">
         </div>
     </fieldset>
     <fieldset>
@@ -172,7 +172,50 @@
             </div>
         </div>
     </fieldset>
+    <fieldset>
+      <legend>Do you have a valid driver’s license?</legend>
+            <div class="xs-1">
+              <input id="yes" type="radio" name="agree1"></input>
+              <label for="yes">Yes</label>
+            </div>
+            <div class="xs-1">
+              <input id="no" type="radio" name="agree1"></input>
+              <label for="no">No</label>
+            </div>
+    </fieldset>
+    <fieldset>
+      <legend>Do you have a pick-up truck you’d be willing to use?</legend>
+            <div class="xs-1">
+              <input id="yes" type="radio" name="agree2"></input>
+              <label for="yes">Yes</label>
+            </div>
+            <div class="xs-1">
+              <input id="no" type="radio" name="agree2"></input>
+              <label for="no">No</label>
+            </div>
+    </fieldset>
+    <fieldset>
+      <legend>Do you have up-to-date first-aid certification?</legend>
+            <div class="xs-1">
+              <input id="yes" type="radio" name="agree3"></input>
+              <label for="yes">Yes</label>
+            </div>
+            <div class="xs-1">
+              <input id="no" type="radio" name="agree3"></input>
+              <label for="no">No</label>
+            </div>
+    </fieldset>
+    <div>
+      <label for="comments">Please let us know any comments or questions you may have. <span>(optional)</span></label>
+      <textarea id="comments" name="comment"></textarea>
+    </div>
+    <div class="push text-center">
+        <button class="btn" type="submit">Apply</button>
+    </div>
   </form>
+  <footer>
+    <p>© Tree Hugger International Organization</p>
+  </footer>
 
 
 </body>
