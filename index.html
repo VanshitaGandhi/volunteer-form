@@ -14,7 +14,59 @@
     <h1>Apply to be a tree planter</h1>
     <p>Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
-  <main>
+  <form method="POST" action="https://formspree.io/vanshitagandhi98@gmail.com">
+    <fieldset>
+      <legend class="bold push">Personal details</legend>
+      <div class="grid">
+        <div class="unit padright push xs-1 m-1-2 l-1-2">
+          <label for="full-name">Full name</label>
+          <input id="full-name" name="name" required>
+        </div>
+        <div class="unit padleft push xs-1 m-1-2 l-1-2">
+          <label for="name">What should we call you?</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="unit padright push xs-1 m-1-2 l-1-2">
+          <label for="dob">Date of birth</label>
+          <input id="dob" type="date" name="name" required>
+        </div>
+        <div class="unit padleft push xs-1 m-1-2 l-1-2">
+          <label for="t-shirt-size">T-shirt size</label>
+          <select id="t-shirt-sizes" name="t-shirt-size">
+            <option>Select a t-shirt size</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option><option>Fitted: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </select>
+        </div>
+        <div class="unit padright push xs-1 m-1-2 l-1-2">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="me@me.com" name="name" required>
+        </div>
+        <div class="unit padleft push xs-1 m-1-2 l-1-2">
+          <label for="Phone-number">Phone number (optional)</label>
+          <input id="Phone-number" type="number" name="name" required>
+        </div>
+    </fieldset>
+    <!-- <fieldset>
+      <legend class="not-bold italic push giga">Mission statement</legend>
+      <div class="push">
+        <label for="why">Why do you want to go to Mars?</label>
+        <textarea id="why" name="reason"></textarea>
+      </div>
+      <div class="push text-center">
+        <button class="btn" type="submit">Register for the trip!</button>
+      </div>
+      <input type="hidden" name="_subject" value="Request to join the mission">
+    </fieldset> -->
+  </form>
 
 
 </body>
