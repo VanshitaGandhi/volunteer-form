@@ -24,11 +24,15 @@ span {
   background-color: #6e8c62;
   color: #fff;
   border: none;
-  padding: 1em 3em;
+  padding: .5em 2em;
 }
 
 hr {
   border-color: #70ad55;
+}
+
+.radio {
+  display: flex;
 }
 
 input,
@@ -39,10 +43,8 @@ input[type="checkbox"] {
   border-color: #6e8c62;
 }
 
-input,
-select,
-textarea {
-  width: 50em;
+.height {
+  height: 10em;
 }
 
 @media only screen and (min-width: 38em) {

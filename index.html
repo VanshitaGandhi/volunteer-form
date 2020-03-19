@@ -13,7 +13,7 @@
 <body>
   <header class="pad-t pad-b">
     <h1 class="bold push-1-2">Apply to be a tree planter</h1>
-    <p class="giga bold push-1-4">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
+    <p class="mega bold push-1-4">Trees are one of the world’s most precious renewable resources—we need your help to renew the ecosystem.</p>
   </header>
   <form class="gutter-1-4" method="POST" action="https://formspree.io/vanshitagandhi98@gmail.com">
     <fieldset>
@@ -22,7 +22,7 @@
         <div class="unit padright push xs-1 m-1-2 l-1-2">
           <label for="full-name">Full name</label>
           <input id="full-name" name="name" required>
-          <p class="italic push-none pad-b-1-2 milli">Your full legal name, for insurance purposes,<br>e.g. “Elizabeth Bradley”.</p>
+          <p class="italic push-none pad-b-1-2 milli">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
         </div>
         <div class="unit padleft push xs-1 m-1-2 l-1-2">
           <label for="name">What should we call you?</label>
@@ -36,6 +36,7 @@
         <div class="unit padleft push xs-1 m-1-2 l-1-2">
           <label for="t-shirt-size">T-shirt size</label>
           <select id="t-shirt-size" name="t-shirt-size">
+            <option>""</option>
             <option>Select a t-shirt size</option>
             <option>Fitted: XS</option>
             <option>Fitted: S</option>
@@ -51,7 +52,7 @@
         </div>
         <div class="unit padright push xs-1 m-1-2 l-1-2">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="me@me.com" name="name" required>
+          <input id="email" type="email" name="name" required>
         </div>
         <div class="unit padleft push xs-1 m-1-2 l-1-2">
           <label for="phone-number">Phone number <span class="italic">(optional)</span></label>
@@ -61,19 +62,20 @@
     </fieldset>
     <hr>
     <fieldset>
-      <legend class="bold push giga pad-t-2">Address</legend>
+      <legend class="bold push giga pad-t">Address</legend>
       <div class="grid">
         <div class="unit padright push xs-1 m-1-2 l-1-2">
           <label for="street-address">Street address</label>
           <input id="street-address" name="address">
         </div>
-        <div class="unit padleft push xs-1 m-1-2 l-1-2">
+        <div class="unit padleft push pad-b xs-1 m-1-2 l-1-2">
           <label for="city">City</label>
           <input id="city" name="address">
         </div>
-        <div class="unit padright push xs-1 m-1-2 l-1-2">
+        <div class="unit padright push pad-b-1-2 xs-1 m-1-2 l-1-2">
           <label for="province">Province</label>
           <select id="province" name="address">
+            <option>""</option>
             <option class="color">Select a province</option>
             <option>Alberta</option>
             <option>British Columbia</option>
@@ -90,7 +92,7 @@
             <option>Yukon</option>
           </select>
         </div>
-        <div class="unit padleft push xs-1 m-1-2 l-1-2">
+        <div class="unit padleft push pad-b-1-4 xs-1 m-1-2 l-1-2">
           <label for="postal-code">Postal code</label>
           <input id="postal-code" name="address">
         </div>
@@ -98,7 +100,7 @@
     </fieldset>
     <hr>
     <fieldset>
-      <legend class="giga pad-t-2">What activities are you interested in helping with?</legend>
+      <legend class="giga pad-t push-1-4">What activities are you interested in helping with?</legend>
       <div class="grid">
         <div class="unit push-1-4 xs-1 s-1 m-1-2 l-1-2 xl-1-2">
           <input id="digging-holes" type="checkbox" name="activities">
@@ -135,7 +137,7 @@
       </div>
     </fieldset>
     <fieldset>
-      <legend class="giga pad-t-2">Do you have any experience with the following?</legend>
+      <legend class="giga pad-t push-1-4">Do you have any experience with the following?</legend>
       <div class="grid">
         <div class="unit push-1-4 xs-1 s-1 m-1-2 l-1-2 xl-1-2">
           <input id="shovels" type="checkbox" name="experience">
@@ -173,58 +175,64 @@
           <input id="special-event-planning" type="checkbox" name="experience">
           <label for="special-event-planning">Special event planning</label>
         </div>
-        <div class="unit push-1-4 xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+        <div class="unit push xs-1 s-1 m-1-2 l-1-2 xl-1-2">
           <input id="speaking-to-groups" type="checkbox" name="experience">
           <label for="speaking-to-groups">Speaking to groups</label>
         </div>
       </div>
     </fieldset>
+    <hr class="pad-t push">
+    <fieldset>
+      <legend class="giga pad-t-1-2 push-1-4">Do you have a valid driver’s license?</legend>
+      <div class="grid">
+        <div class="unit xs-1-2">
+          <input id="yes" type="radio" name="agree1">
+          <label for="yes">Yes</label>
+        </div>
+        <div class="unit xs-1-2 push">
+          <input id="no" type="radio" name="agree1">
+          <label for="no">No</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="giga push-1-4">Do you have a pick-up truck you’d be willing to use?</legend>
+      <div class="grid">
+        <div class="unit xs-1-2 radio">
+          <input id="yes2" type="radio" name="agree2">
+          <label for="yes2">Yes</label>
+        </div>
+        <div class="unit xs-1-2 push pad-b-1-2">
+          <input id="no2" type="radio" name="agree2">
+          <label for="no2">No</label>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="giga push-1-4">Do you have up-to-date first-aid certification?</legend>
+      <div class="grid">
+        <div class="unit xs-1-2">
+          <input id="yes3" type="radio" name="agree3">
+          <label for="yes3">Yes</label>
+        </div>
+        <div class="unit xs-1-2 push pad-b-1-4">
+          <input id="no3" type="radio" name="agree3">
+          <label for="no3">No</label>
+        </div>
+      </div>
+    </fieldset>
     <hr>
-    <fieldset>
-      <legend class="giga pad-t-2 push-1-2">Do you have a valid driver’s license?</legend>
-      <div class="xs-1">
-        <input id="yes" type="radio" name="agree1">
-        <label for="yes">Yes</label>
-      </div>
-      <div class="xs-1">
-        <input id="no" type="radio" name="agree1">
-        <label for="no">No</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="giga push-1-2">Do you have a pick-up truck you’d be willing to use?</legend>
-      <div class="xs-1">
-        <input id="yes2" type="radio" name="agree2">
-        <label for="yes2">Yes</label>
-      </div>
-      <div class="xs-1">
-        <input id="no2" type="radio" name="agree2">
-        <label for="no2">No</label>
-      </div>
-    </fieldset>
-    <fieldset>
-      <legend class="push-1-2">Do you have up-to-date first-aid certification?</legend>
-      <div class="xs-1">
-        <input id="yes3" type="radio" name="agree3">
-        <label for="yes3">Yes</label>
-      </div>
-      <div class="xs-1">
-        <input id="no3" type="radio" name="agree3">
-        <label for="no3">No</label>
-      </div>
-    </fieldset>
-    <hr>
-    <div class="giga pad-t-2 bold push-2">
-      <label for="comments">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
-      <textarea id="comments" name="comment"></textarea>
+    <div class="giga pad-t bold push pad-b">
+      <label class="push-1-2" for="comments">Please let us know any comments or questions you may have. <span class="italic">(optional)</span></label>
+      <textarea class="height" id="comments" name="comment"></textarea>
     </div>
-    <hr class="pad-t pad-b-2 push">
+    <hr class="pad-t push">
     <div class="push text-center push">
       <button class="btn bold pad-b push giga" type="submit">Apply</button>
     </div>
   </form>
   <footer>
-    <p class="push-none pad-t pad-b">© Tree Hugger International Organization</p>
+    <p class="push-none pad-t pad-b bold">© Tree Hugger International Organization</p>
   </footer>
 </body>
 </html>
