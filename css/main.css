@@ -1,4 +1,35 @@
+html {
+  font-family: "Noto Serif", serif;
+}
 
+header {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+input {
+  border-color: #6e8c62;
+}
+
+footer {
+  background-color: #70ad55;
+  color: #fff;
+}
+
+span {
+  color: #70ad55;
+}
+
+.btn {
+  background-color: #6e8c62;
+  color: #fff;
+  border: none;
+  padding: .5em 1.75em;
+}
+
+hr {
+  border-color: #70ad55;
+}
 
 @media only screen and (min-width: 38em) {
 
