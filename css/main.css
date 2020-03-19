@@ -31,6 +31,20 @@ hr {
   border-color: #70ad55;
 }
 
+input,
+select,
+textarea,
+input[type="radio"],
+input[type="checkbox"] {
+  border-color: #6e8c62;
+}
+
+input,
+select,
+textarea {
+  width: 50em;
+}
+
 @media only screen and (min-width: 38em) {
 
   .padleft {
