@@ -29,6 +29,11 @@ span {
 
 hr {
   border-color: #70ad55;
+  opacity: .3;
+}
+
+fieldset {
+border: 0;
 }
 
 .radio {
